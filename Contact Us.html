@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sufyaan Cassim | ST10304152" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="mystyles.css" />
+    <title>Contact Us - Sneaker Mania</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <script src="myscript.js" defer></script>
+    <meta
+      name="description"
+      content="Sneaker Mania - Your ultimate destination for the latest sneakers and fashion trends."
+    />
+  </head>
+  <body>
+    <header>
+      <h1><strong>Contact Us</strong></h1>
+      <div id="date-time" class="date-time"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="Homepage.html" class="nav-link">Homepage</a>
+            <ul class="dropdown-content">
+              <li><a href="#trending">Trending Sneakers</a></li>
+              <li><a href="#summary">Summary of Organization</a></li>
+              <li><a href="#contact">Contact Information</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="About Us.html" class="nav-link">About Us</a>
+            <ul class="dropdown-content">
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#background">Background Information</a></li>
+              <li><a href="#quality">Our Standards</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="Sneaker Collections.html" class="nav-link"
+              >Sneaker Collections</a
+            >
+            <ul class="dropdown-content">
+              <li><a href="#classics">Classics</a></li>
+              <li><a href="#athletics">Athletics</a></li>
+              <li><a href="#limited">Limited Editions</a></li>
+              <li><a href="#trending">What's Trending</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="Fashion Trends and Styles.html" class="nav-link"
+              >Latest Fashion Trends and Styles</a
+            >
+            <ul class="dropdown-content">
+              <li><a href="#tips">Styling Tips</a></li>
+              <li><a href="#outfits">Shoes with Outfits</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="Contact Us.html" class="nav-link">Contact Us</a>
+            <ul class="dropdown-content">
+              <li><a href="#connect">Connect With Us</a></li>
+              <li><a href="#support">Customer Support</a></li>
+              <li><a href="#hours">Business Hours</a></li>
+              <li><a href="#html-form">Contact Form</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="cart-container">
+        <button class="cart-button" onclick="navigateToCart()">
+          <i class="bi bi-cart"></i>
+          <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="contact-us-text">
+        <h2 id="connect">Connect with us at Sneaker Mania</h2>
+        <p>
+          Physical store address: <br />
+          Come and visit us at our store to experience all our sneakers
+          firsthand <br />
+          Rifle Range Road <br />
+          Mondeor <br />
+          Johannesburg South <br />
+          2091
+        </p>
+
+        <h3 id="support">Customer Support</h3>
+        <p>
+          Have any question or need some assistance? Our friendly customer
+          support team is here to help you out. <br />
+          Email: info@sneakermania.com <br />
+          Phone:065 152 3654/0159 365 149
+        </p>
+
+        <h4 id="hours">Business Hours</h4>
+        <p>
+          Monday-Friday: 09:00 – 17:00<br />
+          Saturday: 09:00 – 14:00<br />
+          Sunday: Closed
+        </p>
+        <div class="form-center">
+          <h2 id="html-form">Contact Form</h2>
+
+          <form
+            id="myForm"
+            class="html_form"
+            action="ST10304152@rcconnect.edu.za"
+            method="post"
+          >
+            <h2>Enter your details</h2>
+
+            <label for="fname">First Name: </label><br />
+            <input type="text" id="fname" name="fname" /><br />
+
+            <label for="lname">Last Name: </label><br />
+            <input type="text" id="lname" name="lname" /><br />
+
+            <label for="email">Email: </label><br />
+            <input type="email" id="email" name="email" /><br />
+
+            <label for="shoe-size">Shoe Size (US): </label><br />
+            <input
+              type="number"
+              id="shoe-size"
+              name="shoe-size"
+              min="0"
+              max="15"
+            /><br />
+            <br />
+            <label for="message">Feedback or Recommendations: </label><br />
+            <textarea id="message" name="message" rows="5"></textarea>
+            <p>What's your favorite sneaker?</p>
+            <input
+              type="radio"
+              id="white-airforces"
+              name="favsneaker"
+              value="White Air Force 1"
+            />
+            <label for="white-airforces">White Air Force 1</label><br />
+            <input
+              type="radio"
+              id="black-allstars"
+              name="favsneaker"
+              value="High Top Black All-Stars"
+            />
+            <label for="black-allstars">High Top Black All-Stars</label><br />
+            <input
+              type="radio"
+              id="vans"
+              name="favsneaker"
+              value="Black and White Vans"
+            />
+            <label for="vans">Black and White Vans</label> <br />
+            <input
+              type="radio"
+              id="jordans"
+              name="favsneaker"
+              value="Classic Jordan 4's"
+            />
+            <label for="jordans">Classic Jordan 4's</label>
+            <p></p>
+            <input type="submit" id="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Sneaker Mania</p>
+    </footer>
+  </body>
+</html>

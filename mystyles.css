@@ -1,0 +1,409 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(images/background_img.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #00b7ff;
+  transition: color 0.4s ease-in-out;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #008080;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  clear: both;
+}
+
+.image-container,
+.sneaker-image,
+.outfit-images {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 10px 10px 5px;
+  width: 370px;
+  height: 300px;
+}
+
+.image-container img:hover,
+.sneaker-image img:hover,
+.outfit-images:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img,
+.sneaker-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price-overlay {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.about-us-text,
+.contact-us-text {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(119, 112, 112, 0.3);
+}
+
+.contact-us-text {
+  color: #008080;
+}
+
+.contact-us-text p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.sneaker-collection-text h2,
+.fashion-container h3,
+.fashion-container h2,
+h2,
+h3 {
+  margin-left: 10px;
+}
+
+.fashion-container h3 {
+  font-weight: bold;
+  text-align: center;
+  color: #003380;
+  background-color: rgba(119, 112, 112, 0.3);
+  padding: 10px;
+}
+
+.fashion-container h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.fashion-container h1 {
+  text-align: center;
+  color: #008080;
+}
+
+@media (max-width: 960px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  nav ul li {
+    margin-right: 15px;
+  }
+
+  .image-container,
+  .sneaker-image,
+  .outfit-images {
+    width: 95%;
+    height: auto;
+  }
+
+  .date-time {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .cart-container {
+    justify-content: center;
+  }
+
+  .cart-button {
+    margin-top: 10px;
+  }
+
+  #google-form iframe {
+    width: 100%;
+    height: 870px;
+  }
+
+  #myForm {
+    width:85%;
+  }
+
+  .html_form {
+    width: 85%;
+  }
+
+  .html_form input[type="text"],
+  .html_form input[type="submit"],
+  .html_form input[type="email"],
+  .html_form input[type="tel"],
+  .html_form textarea {
+    width: 90%;
+  }
+
+  .button-container {
+    max-width: 90%;
+  }
+
+  .back-button {
+    margin-top: 30px;
+  }
+}
+
+.html_form {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.html_form label {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.html_form h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.html_form label {
+  font-weight: bold;
+}
+
+.html_form input[type="text"],
+.html_form input[type="submit"],
+.html_form input[type="email"],
+.html_form textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.html_form input[type="submit"] {
+  background-color: #4caf50;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.html_form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-center p {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-shadow: none;
+}
+
+.date-time {
+  display: block;
+  text-align: left;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  left: 0;
+  text-align: left;
+  width: 130px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #161616bb;
+  color: #ffffff;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #999494;
+}
+
+.bi-cart {
+  font-size: 2rem;
+  color: #ff0000;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-button:focus {
+  outline: none;
+}
+
+#cart-count {
+  font-size: 18px;
+  color: white;
+}
+
+#cart-items {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items div {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.button-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px #646464;
+  transition: background-color 0.4s;
+}
+
+.back-button:hover {
+  background-color: #ffffff;
+  color: red;
+}
+
+.button-clear {
+  background-color: #999494;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: white;
+}
+
+.button-clear:hover {
+  background-color: #ffffff;
+  color: #999494;
+}

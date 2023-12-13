@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sufyaan Cassim | ST10304152" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="mystyles.css" />
+    <title>Explore Diverse Sneaker Collections - Sneaker Mania</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <script src="myscript.js" defer></script>
+    <meta
+      name="description"
+      content="Explore a wide collection of sneakers at Sneaker Mania, including classic styles, athletic shoes,
+      limited editions, and trending sneakers. Find the perfect pair to suit your style and preference."
+    />
+  </head>
+  <body>
+    <header>
+      <h1><strong>Sneaker Collections</strong></h1>
+      <div id="date-time" class="date-time"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="Homepage.html" class="nav-link">Homepage</a>
+            <ul class="dropdown-content">
+              <li><a href="#trending">Trending Sneakers</a></li>
+              <li><a href="#summary">Summary of Organization</a></li>
+              <li><a href="#contact">Contact Information</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="About Us.html" class="nav-link">About Us</a>
+            <ul class="dropdown-content">
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#background">Background Information</a></li>
+              <li><a href="#quality">Our Standards</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="Sneaker Collections.html" class="nav-link"
+              >Sneaker Collections</a
+            >
+            <ul class="dropdown-content">
+              <li><a href="#classics">Classics</a></li>
+              <li><a href="#athletics">Athletics</a></li>
+              <li><a href="#limited">Limited Editions</a></li>
+              <li><a href="#trending">What's Trending</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="Fashion Trends and Styles.html" class="nav-link"
+              >Latest Fashion Trends and Styles</a
+            >
+            <ul class="dropdown-content">
+              <li><a href="#tips">Styling Tips</a></li>
+              <li><a href="#outfits">Shoes with Outfits</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="Contact Us.html" class="nav-link">Contact Us</a>
+            <ul class="dropdown-content">
+              <li><a href="#connect">Connect With Us</a></li>
+              <li><a href="#support">Customer Support</a></li>
+              <li><a href="#hours">Business Hours</a></li>
+              <li><a href="#html-form">Contact Form</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="cart-container">
+        <button class="cart-button" onclick="navigateToCart()">
+          <i class="bi bi-cart"></i>
+          <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="sneaker-collection-text">
+        <h2>Variety and Style</h2>
+        <p>
+          Explore a world of sneaker diversity at Sneaker Mania. Our wide
+          collection of sneakers caters to every style and preference, ensuring
+          that you find the perfect pair for you.
+        </p>
+
+        <h2>Picture Gallery</h2>
+
+        <h3 id="classics">All Time Classics</h3>
+        <p>
+          For those who appreciate all around style our classic sneakers bring
+          together the best of shoes in one place. From clean white sneakers to
+          other sleek design these shoes will go with any outfit.
+        </p>
+        <div class="sneaker-image">
+          <img
+            src="images/classics/all_time_classic_1.jpg"
+            alt="Light Brown Converse All Stars"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R899.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Light Brown Converse All Stars', 899.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/classics/all_time_classic_2.jpg"
+            alt="Black Converse All Stars"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R899.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Black Converse All Stars', 899.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/classics/all_time_classic_3.jpg"
+            alt="Air Jordan 4 `Red Metallic` "
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R2699.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Air Jordan 4 `Red Metallic` ', 2699.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/classics/all_time_classic_4.jpg"
+            alt="Air Jordan 1 Mid Black and White"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R1499.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Air Jordan 1 Mid Black and White', 1499.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/classics/all_time_classic_5.jpg"
+            alt="Black Adidas Trainers"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R1199.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Black Adidas Trainers', 1199.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <h3 id="athletics">Athletic Shoes</h3>
+        <p>
+          For those who value style with comfortability and long lasting shoes
+          then these are for you. These are not just for the people who work out
+          but are for those who value style and functionality.
+        </p>
+        <div class="sneaker-image">
+          <img
+            src="images/athletics/athletic_shoe_1.jpg"
+            alt="Premium Athletic Pink and Blue Sneakers"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R1669.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Premium Athletic Pink and Blue Sneakers', 1669.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/athletics/athletic_shoe_2.jpg"
+            alt="HOVR Red Running Shoes"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R689.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('HOVR Red Running Shoes', 689.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/athletics/athletic_shoe_3.jpg"
+            alt="Green New Balance Running Shoes"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R799.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Green New Balance Running Shoes', 799.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/athletics/athletic_shoe_4.jpg"
+            alt="Beathable Dark Green and White Runners"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R989.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Beathable Dark Green and White Runners', 989.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/athletics/athletic_shoe_5.jpg"
+            alt="Brooks Caldera Yellow and White Runners"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R999.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Brooks Caldera Yellow and White Runners', 999.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <h3 id="limited">Limited Edition Shoes</h3>
+        <p>
+          Now these are special one of a kind sneaker targeted for enthusiasts
+          and collectors. Discover some unique and exclusive collaborations that
+          add a certain feel to your sneaker collection.
+        </p>
+        <div class="sneaker-image">
+          <img
+            src="images/limited_edition/limited_edition_shoe_1.jpg"
+            alt="Nike Extreme Yellow and Blue Dunks"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R3499.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Nike Extreme Yellow and Blue Dunks', 3499.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/limited_edition/limited_edition_shoe_2.jpg"
+            alt="Jordan 1 High Tops Blue and White Shoes"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R3249.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Jordan 1 High Tops Blue and White Shoes', 3249.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/limited_edition/limited_edition_shoe_3.jpg"
+            alt="Nike Air X Jordans Yellow Low Dunks"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R5499.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Nike Air X Jordans Yellow Low Dunks', 5499.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/limited_edition/limited_edition_shoe_4.jpg"
+            alt="Hydro Nike Airforces Low Dunk"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R4879.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Hydro Nike Airforces Low Dunk', 4879.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/limited_edition/limited_edition_shoe_5.jpg"
+            alt="Puma X Clyde Low White Edition Shoes"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R1785.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Puma X Clyde Low White Edition Shoes', 1785.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <h3 id="trending">Trending Sneakers</h3>
+        <p>
+          Stay ahead of the fashion and discover our latest and trendy shoes.
+          These are perfect for those who want to be in touch with the latest
+          fashion as well as trying on a variety of stylish shoes.
+        </p>
+        <div class="sneaker-image">
+          <img
+            src="images/trending/trending_shoes_1.jpg"
+            alt="Black And White Gold Airforce 1 Sneakers"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R1749.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Black And White Gold Airforce 1 Sneakers', 1749.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/trending/trending_shoes_2.jpg"
+            alt="White And Black Adidas Yeezys"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R1489.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('White And Black Adidas Yeezys', 1489.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/trending/trending_shoes_3.jpg"
+            alt="Black And White Converse All Stars"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R899.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Black And White Converse All Stars', 899.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="sneaker-image">
+          <img
+            src="images/trending/trending_shoes_4.jpg"
+            alt="Grey and Orange Yeezys"
+            class="sneaker-image"
+          />
+          <div class="price-overlay">R1199.99</div>
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart('Grey and Orange Yeezys', 1199.99)"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2023 Sneaker Mania</p>
+    </footer>
+  </body>
+</html>
