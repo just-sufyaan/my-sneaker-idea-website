@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const aboutUsDropdown = document.querySelector(
     "li:nth-of-type(2) > ul.dropdown-content"
   );
-  const homepageLink = document.querySelector('a[href="Homepage.html"]');
+  const homepageLink = document.querySelector('a[href="index.html"]');
   const homepageDropdown = document.querySelector(
     "li:nth-of-type(1) > ul.dropdown-content"
   );
@@ -152,7 +152,7 @@ function navigateToCart() {
 
 // Function to return to the homepage.
 function navigateBack() {
-  window.location.href = "Homepage.html";
+  window.location.href = "index.html";
 }
 
 // Fuction for managing and displaying items to the cart.
